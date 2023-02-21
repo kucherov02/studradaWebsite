@@ -268,7 +268,7 @@
 .grid-container{
     width: 100%;
     height: 100vh;
-    padding: 3rem 6rem;
+    padding: 5rem 10rem;
     background: #213A7A;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -276,12 +276,6 @@
     gap: .5rem;
 }
 
-
-
-.grid-container img{
-    width: 50px;
-
-}
 
 
 .grid-item{
@@ -321,11 +315,6 @@
 
 .item-5{
     grid-column: 2/5;
-    font-size: 2rem;
-    font-weight: 200;
-    justify-content: flex-start;
-    padding-left: 2rem;
-    color: #213A7A;
 }
 
 .item-6{
@@ -392,6 +381,144 @@
    }
   
 }
+
+
+.qa-section{
+    width: 100%;
+    height: 100vh;
+}
+
+.qa-container{
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.part-container{
+    width:45%;
+    height: 80%;
+}
+
+.qa-title{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.map-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    border: 4px solid #213A7A;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.map-container iframe{
+    height: 100%;
+}
+
+.form-container{
+    min-height: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    border: 4px solid #213A7A;
+    border-radius: 20px;
+}
+
+
+form{
+    min-height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+
+form div{
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form label{
+    margin-bottom: .5rem;
+}
+
+form input{
+    border: 2px solid #EAC988;
+    border-radius: 20px;
+    min-height: 2rem;
+    padding-left: 1rem;
+}
+
+form textarea{
+    border: 2px solid #EAC988;
+    border-radius: 10px;
+    min-height: 2rem;
+    padding: 1rem 0rem 0rem 1rem;
+}
+
+footer{
+    width:100%;
+    height: 9rem;
+    padding: 0 10%;
+    background: #213A7A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h3{
+    color: white;
+    font-weight: 200;
+}
+
+
+
+.social-media-container ul{
+    list-style: none;
+}
+
+.social-media-container li a{
+    text-decoration: none;
+    color: #EAC988;
+    display: block;
+    padding: .4rem;
+}
+
+.button-container{
+    width: 100%;
+}
+
+.form-button{
+    width: 30%;
+    padding: .7rem 1.5rem;
+    background: #213A7A;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+
+.form-button:hover{
+    background: #EAC988;
+}
+
+
+
 
 
 

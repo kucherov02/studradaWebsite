@@ -83,10 +83,15 @@ carouselNav.addEventListener("click",e=>{
 })
 
 window.addEventListener("resize", ()=>{
-    console.log("HI!");
     slideWidth = slides[0].getBoundingClientRect().width;
     slides.forEach(setSlidePos);
     const currentSlide = carouselTrack.querySelector(".current_slide");
 
     moveToSlide(currentSlide, currentSlide, carouselTrack);
 })
+
+
+//grid 
+
+
+
