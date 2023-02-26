@@ -333,9 +333,14 @@
 
 
 @media only screen and (max-width: 600px){
+
+    .grid-section{
+        width: 100%;
+    }
     .grid-container{
         grid-template-columns: 1fr;
         height: auto;
+        min-width: 100%;
        }
 
        .grid-item{
@@ -346,11 +351,11 @@
        }
 
        .item-1{
-        font-size: 1.5rem;
+        display: none;
        }
 
        .item-3{
-        font-size: 1.5rem;
+        display: none;
        }
 
        .item-5{
@@ -363,10 +368,36 @@
         display: none;
        }
 
+      
+
        .item-4{
         display: none;
        }
+
+
+
+       .qa-container{
+        min-height: 180vh;
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .part-container{
+        min-height: 90vh;
+        min-width: 70%;
+        display:   flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 4rem 0rem;
+    }
+
+
 }
+
 @media only screen and (max-width: 1000px) and (min-width: 600px){
    .grid-container{
     grid-template-columns: 1fr;
@@ -379,6 +410,36 @@
     grid-column: span 1;
     grid-row: span 1;
    }
+
+   .qa-section{
+    width: 100%;
+    height: 300vh;
+    
+}
+
+.qa-container{
+    width: 100vh;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+   
+.part-container{
+    min-width:400px;
+    max-height: 50%;
+    display:   flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.qa-title{
+    font-size: .8rem;
+    margin-bottom: .5rem;
+    font-weight: 700;
+}
   
 }
 
@@ -435,17 +496,16 @@
 
 
 form{
-    min-height: 60%;
+    min-height: 80%;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 2rem;
 }
 
 
 form div{
-    padding: 1.5rem;
+    margin: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -498,11 +558,10 @@ footer h3{
 }
 
 .button-container{
-    width: 100%;
+    max-width: 50%;
 }
 
 .form-button{
-    width: 30%;
     padding: .7rem 1.5rem;
     background: #213A7A;
     color: white;
